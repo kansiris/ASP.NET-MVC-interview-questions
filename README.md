@@ -27,7 +27,8 @@
 |9 | [Can you explain RenderBody and RenderPage in MVC?](#Can-you-explain-RenderBody-and-RenderPage-in-MVC?)|
 |10| [Explain the methods used to render the views in MVC?](#Explain-the-methods-used-to-render-the-views-in-MVC?)|
 |1 | [Explain ASP.NET WebApi vs MVC?](#Explain-ASP.NET-WebApi-vs-MVC?)|
-|2 | [Can a view be shared across multiple controllers? If Yes, How we can do that?](#Can-a-view-be-shared-across-multiple-controllers?- If-Yes,-How-we-can-do-that?)|
+|2 | [Can a view be shared across multiple controllers? If Yes, How we can do that?]|
+| |(#Can-a-view-be-shared-across-multiple-controllers?- If-Yes,-How-we-can-do-that?)|
 |3 | [Explain TempData in MVC?](#Explain-TempData-in-MVC?)|
 |4 | [What are Validation Annotations?](#What-are-Validation-Annotations?)|
 |5 | [Why to use Html.Partial in MVC?](#Why-to-use-Html.Partial-in-MVC?)|
