@@ -6,7 +6,7 @@
 
 | No. | Questions |
 |---- | ---------
-|1 | [What is MVC?](#What is MVC?)|
+|1    | [What is MVC?](#What is MVC?)|
 |2 | [Explain MVC design pattern?](#Explain MVC design pattern?)|
 |3 | [What is Domain Driven Design and Development?](#What is Domain Driven Design and Development?)|
 |4 | [What is MVP pattern?](#What is MVP pattern?)|
