@@ -6,7 +6,7 @@
 
 | No. | Questions |
 |---- | ---------
-|1    | [What is MVC?](#What is MVC?)|
+|1    | [What is MVC?](#What-is-MVC?)|
 |2 | [Explain MVC design pattern?](#Explain MVC design pattern?)|
 |3 | [What is Domain Driven Design and Development?](#What is Domain Driven Design and Development?)|
 |4 | [What is MVP pattern?](#What is MVP pattern?)|
@@ -67,8 +67,6 @@
 |8 | [How to restrict an action method to be invoked only by HTTP GET, POST, PUT or DELETE?](#How to restrict an action method to be invoked only by HTTP GET, POST, PUT or DELETE?)|
 |9 | [How to determine an action method is invoked by HTTP GET or POST?](#How to determine an action method is invoked by HTTP GET or POST?)|
 |10| [How to determine an AJAX request?](#How to determine an AJAX request?)|
-
-
 |1 | [What is Data Annotations in ASP.NET MVC?](#What is Data Annotations in ASP.NET MVC?)|
 |2 | [How to apply Server side validation in ASP.NET MVC?](#How to apply Server side validation in ASP.NET MVC?)|
 |3 | [How to determine there is no error in Model State?](#How to determine there is no error in Model State?)|
@@ -99,7 +97,6 @@
 |8 | [What are advantages of caching?](#What are advantages of caching?)|
 |9 | [What is output caching?](#What is output caching?)|
 |10| [What is Donut caching and Donut hole caching in ASP.NET MVC?](#What is Donut caching and Donut hole caching in ASP.NET MVC?)|
-
 |1 | [What is loose coupling and how is it possible?](#What is loose coupling and how is it possible?)|
 |2 | [What are Dependency Inversion Principle (DIP) and IoC?](#What are Dependency Inversion Principle (DIP) and IoC?)|
 |3 | [What is Dependency Injection (DI)?](#What is Dependency Injection (DI)?)|
