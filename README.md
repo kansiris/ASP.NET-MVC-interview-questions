@@ -7,13 +7,13 @@
 | No. | Questions |
 |---- | ---------
 |1    | [What is MVC?](#What-is-MVC?)|
-|2 | [Explain MVC design pattern?](#Explain MVC design pattern?)|
-|3 | [What is Domain Driven Design and Development?](#What is Domain Driven Design and Development?)|
-|4 | [What is MVP pattern?](#What is MVP pattern?)|
-|5 | [What is MVVM pattern?](#What is MVVM pattern?)|
-|6 | [What is ASP.NET MVC?](#What is ASP.NET MVC?)|
-|7 | [How MVC pattern works in ASP.NET MVC?](#How MVC pattern works in ASP.NET MVC?)|
-|8 | [How Model, View and Controller communicate with each other in ASP.NET MVC?](#How Model, View and Controller communicate with each other in ASP.NET MVC?)|
+|2 | [Explain MVC design pattern?](#Explain-MVC-design-pattern?)|
+|3 | [What is Domain Driven Design and Development?](#What-is-Domain-Driven-Design-and-Development?)|
+|4 | [What is MVP pattern?](#What-is-MVP-pattern?)|
+|5 | [What is MVVM pattern?](#What-is-MVVM-pattern?)|
+|6 | [What is ASP.NET MVC?](#What-is-ASP.NET-MVC?)|
+|7 | [How MVC pattern works in ASP.NET MVC?](#How-MVC-pattern-works-in-ASP.NET-MVC?)|
+|8 | [How Model, View and Controller communicate with each other in ASP.NET MVC?](#How-Model,-View-and-Controller-communicate-with-each-other-in-ASP.NET-MVC?)|
 |9 | [What are advantages of ASP.NET MVC?](#What are advantages of ASP.NET MVC?)|
 |10| [Explain brief history of ASP.NET MVC?](#Explain brief history of ASP.NET MVC?)|
 |1 | [What is difference between 3-layer architecture and MVC architecture?](#What is difference between 3-layer architecture and MVC architecture?)|
