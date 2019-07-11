@@ -95,12 +95,12 @@
 |7 | [What is caching and when to use it? ](#What-is-caching-and-when-to-use-it? )|
 |8 | [What are advantages of caching?](#What-are-advantages-of-caching?)|
 |9 | [What is output caching?](#What-is-output-caching?)|
-|10| [What is Donut caching and Donut hole caching in ASP.NET MVC?](#What-is-Donut-caching-and-Donut-hole-caching-in-ASP.NET MVC?)|
+|10| [What is Donut caching and Donut hole caching in ASP.NET MVC?](#What-is-Donut-caching-and-Donut-hole-caching-in-ASP.NET MVC? )|
 |1 | [What is loose coupling and how is it possible?](#What-is-loose-coupling-and-how-is-it-possible?)|
 |2 | [What are Dependency Inversion Principle (DIP) and IoC?](#What-are-Dependency-Inversion-Principle-(DIP)-and-IoC?)|
 |3 | [What is Dependency Injection (DI)?](#What-is-Dependency-Injection-(DI)?)|
 |4 | [What is Service Locator?](#What-is-Service-Locator?)|
-|5 | [What are different ways to implement Dependency Injection (DI)?](#What-are-different-ways-to-implement-Dependency-Injection (DI)?)|
+|5 | [What are different ways to implement Dependency Injection (DI)?](#What-are-different-ways-to-implement-Dependency-Injection (DI)? )|
 |6 | [What are advantages of Dependency Injection (DI)?](#What-are-advantages-of-Dependency-Injection-(DI)?)|
 |7 | [What is IoC or DI container? ](#What-is-IoC-or-DI-container?)|
 |8 | [What are popular DI containers?](#What-are-popular-DI-containers?)|
