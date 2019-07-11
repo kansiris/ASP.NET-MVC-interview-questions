@@ -17,7 +17,7 @@
 |9 | [What are advantages of ASP.NET MVC?](#What-are-advantages-of-ASP.NET-MVC?)|
 |10| [Explain brief history of ASP.NET MVC?](#Explain-brief-history-of-ASP.NET-MVC?)|
 |1 | [What is difference between 3-layer architecture and MVC architecture?](#What-is-difference-between-3-layer-architecture-and-MVC-architecture?)|
-|2 | [What is difference between ASP.NET WebForm and ASP.NET MVC?](#What-is-difference-between-ASP.NET-WebForm-and-ASP.NET MVC?)|
+|2 | [What is difference between ASP.NET WebForm and ASP.NET MVC?](#What-is-difference-between-ASP.NET-WebForm-and-ASP.NET MVC? )|
 |3 | [What is ViewModel in ASP.NET MVC?](#What-is-ViewModel-in-ASP.NET-MVC?)|
 |4 | [Explain ASP.NET MVC pipeline?](#Explain-ASP.NET-MVC-pipeline?)|
 |5 | [What is Routing in ASP.NET MVC?](#What-is-Routing-in-ASP.NET-MVC?)|
@@ -25,7 +25,7 @@
 |7 | [What is Attribute Routing and how to define it?](#What-is-Attribute-Routing-and-how-to-define-it?)|
 |8 | [When to use Attribute Routing?](#When-to-use-Attribute-Routing?)|
 |9 | [How to enable Attribute Routing in ASP.NET MVC?](#How-to-enable-Attribute-Routing-in-ASP.NET-MVC?)|
-|10| [How to define Attribute Routing for Area in ASP.NET MVC?](#How-to-define-Attribute-Routing-for-Area-in-ASP.NET-MVC?)|
+|10| [How to define Attribute Routing for Area in ASP.NET MVC?](#How-to-define-Attribute-Routing-for-Area-in-ASP.NET-MVC? )|
 |1 | [What is difference between Routing and URL Rewriting?](#What-is-difference-between-Routing-and-URL-Rewriting?)|
 |2 | [What is Route Constraints in ASP.NET MVC?](#What-is-Route-Constraints-in-ASP.NET-MVC?)|
 |3 | [How route table is created in ASP.NET MVC?](#How-route-table-is-created-in-ASP.NET-MVC?)|
