@@ -167,7 +167,7 @@ Full features of ASP.NET - One of the key advantages of using ASP.NET MVC is tha
 
 
 
-Question : ###Explain MVC application life cycle?
+Question : ### Explain MVC application life cycle?
 Any web application has two main execution steps, first understanding the request and depending on the type of the request sending out appropriate response. MVC application life cycle is not different it has two main phases, first creating the request object and second sending our response to the browser.
 Creating the request object: The request object creation has four major steps. The following is the detailed explanation of the same(short cut to remember FFRCAR)
 Step 1: Fill route
@@ -182,7 +182,7 @@ Creating Response object: This phase has two steps executing the action and fina
 
 
 
-Question : ###List out different return types of a controller action method?
+Question : ### List out different return types of a controller action method?
 Controller actions are methods defined in the controller class and responsible to perform required operations on the user's inputs like as form values, query strings values etc. with the help of Model and passing the results back to the View. There are total nine return types we can use to return results from controller to view. The base type of all these result types is ActionResult.
 ViewResult (View): This return type is used to return a webpage from an action method.Returns a ViewResult which renders the specified or default view by using controller View() helper method
 PartialviewResult (Partialview): This return type is used to send a part of a view which will be rendered in another view. or Returns a PartialViewResult which renders the specified or default partial view (means a view without its layout) by using controller PartialView() helper method.
@@ -196,7 +196,7 @@ EmptyResult: This return type is used to return nothing (void) in the result. or
 HttpNotFoundResult - Returns an HttpNotFoundResult which renders a 404 HTTP Status Code response by using controller HttpNotFound() helper method.
 HttpUnauthorizedResult - Returns an HttpUnauthorizedResult which renders a 401 HTTP Status Code (means "not authorized") response. This has no controller helper method. This is used for authentication (forms authentication or Windows authentication) to ask the user to log in.
 HttpStatusCodeResult - Returns an HttpStatusCodeResult which renders a specified HTTP code response. This has no controller helper method.
-Question : ###What are Filters in MVC?
+Question : ### What are Filters in MVC?
 In MVC, controllers define action methods and these action methods generally have a one-to-one relationship with UI controls such as clicking a button or a link, etc. For example, in one of our previous examples, the UserController class contained methods UserAdd, UserDelete, etc. But many times we would like to perform some action before or after a particular operation. For achieving this functionality, ASP.NET MVC provides feature to add pre and post action behaviors on controller's action methods.
 Types of Filters: ASP.NET MVC framework supports the following action filters:
 Action Filters: Action filters are used to implement logic that gets executed before and after a controller action executes. We will look at Action Filters in detail in this chapter.
@@ -205,7 +205,7 @@ Result Filters: Result filters contain logic that is executed before and after a
 Exception Filters: Exception filters are the last type of filter to run. You can use an exception filter to handle errors raised by either your controller actions or controller action results. You can also use exception filters to log errors.
 Action filters are one of most commonly used filters to perform additional data processing, or manipulating the return values or cancelling the execution of action or modifying the view structure at run time.
 
-Question : ###What are Action Filters in MVC?
+Question : ### What are Action Filters in MVC?
 Action Filters are additional attributes that can be applied to either a controller section or the entire controller to modify the way in which action is executed. These attributes are special .NET classes derived from System.Attribute which can be attached to classes, methods, properties and fields.
 ASP.NET MVC provides the following action filters:
 Output Cache: This action filter caches the output of a controller action for a specified amount of time.
@@ -220,7 +220,7 @@ E.g.: Specifies the return value to be cached for 10 seconds.
 	publicstringIndex()
 	{	returnDateTime.Now.ToString("T");	}	}
 
-Question : ###Explain what is routing in MVC? What are the three segments for routing important?
+Question : ### Explain what is routing in MVC? What are the three segments for routing important?
 Routing is a mechanism to process the incoming url that is more descriptive and give desired response. In this case, URL is not mapped to specific files or folder as was the case of earlier day’s web sites.
 There are two types of routing (after the introduction of ASP.NET MVC 5).
 Convention based routing: to define this type of routing, we call MapRoute method and set its unique name, URL pattern and specify some default values.
@@ -231,7 +231,7 @@ Routing is the URL pattern that is mappped together to a handler,rounting is res
 3.	Parammeter
 i.e: ControllerName/ActionMethodName/{ParamerName} and also route map coding written in a Global.asax file.
 
-Question : ###What is Route in MVC? What is Default Route in MVC?
+Question : ### What is Route in MVC? What is Default Route in MVC?
 A route is a URL pattern that is mapped to a handler. The handler can be a physical file, such as an .aspx file in a Web Forms application. A handler can also be a class that processes the request, such as a controller in an MVC application. To define a route, you create an instance of the Route class by specifying the URL pattern, the handler, and optionally a name for the route.
 You add the route to the application by adding the Route object to the static Routes property of the RouteTable class. The Routesproperty is a RouteCollection object that stores all the routes for the application. You typically do not have to write code to add routes in an MVC application. Visual Studio project templates for MVC include preconfigured URL routes. These are defined in the Mvc Application class, which is defined in the Global.asax file.
 Route definition
@@ -260,9 +260,9 @@ This route pattern is registered via call to the MapRoute() extension method of 
 
 
 
-Question : ###Mention what is the difference between Temp data, View, Session and View Bag?
+Question : ### Mention what is the difference between Temp data, View, Session and View Bag?
 Or
-Question: ###How can we pass the data From Controller to View in MVC?
+Question: ### How can we pass the data From Controller to View in MVC?
 In ASP.NET MVC there are three ways to pass/store data between the controllers and views.
 ViewData:
 ViewData is used to pass data from controller to view.
@@ -287,7 +287,7 @@ Session is valid for all requests, not for a single redirect.
 It’s also required typecasting for getting data and check for null values to avoid error.
 
 
-Question : ###What is Partial View in MVC?
+Question : ### What is Partial View in MVC?
 A partial view is a chunk of HTML that can be safely inserted into an existing DOM. Most commonly, partial views are used to componentize Razor views and make them easier to build and update. Partial views can also be returned directly from controller methods. In this case, the browser still receives text/html content but not necessarily HTML content that makes up an entire page. As a result, if a URL that returns a partial view is directly invoked from the address bar of a browser, an incomplete page may be displayed. This may be something like a page that misses title, script and style sheets.
 However, when the same URL is invoked via script, and the response is used to insert HTML within the existing DOM, then the net effect for the end user may be much better and nicer. Partial view is a reusable view (like a user control) which can be embedded inside other view. For example, let’s say all the pages of your site have a standard structure with left menu, header, and footer as in the following image,
 
@@ -317,7 +317,8 @@ However, when the same URL is invoked via script, and the response is used to in
 
 
 
-Question : ###Explain what is the difference between View and Partial View?
+Question : ### Explain what is the difference between View and Partial View?
+
 View:
 •	It contains the layout page.
 •	Before any view is rendered, viewstart page is rendered.
@@ -329,11 +330,13 @@ Partial view does not verify for a viewstart.cshtml.We cannot put common code fo
 Partial view is designed specially to render within the view and just because of that it does not consist any mark up.
 We can pass a regular view to the RenderPartial method.
 
- Question: ###What are HTML Helpers in ASP.NET MVC?
- An HTML Helper is just a method that returns a HTML string. The string can represent any type of content that you want. For example, you can use HTML Helpers to render standard HTML tags like HTML <input>, <button> and <img> tags etc.
+ Question: ### What are HTML Helpers in ASP.NET MVC?
+ 
+  An HTML Helper is just a method that returns a HTML string. The string can represent any type of content that you want. For example, you can use HTML Helpers to render standard HTML tags like HTML <input>, <button> and <img> tags etc.
 You can also create your own HTML Helpers to render more complex content such as a menu strip or an HTML table for displaying database data.
 	
-Question: ###What are different types of HTML Helpers?
+Question: ### What are different types of HTML Helpers?
+
 There are three types of HTML helpers as given below:
 Inline Html Helpers - These are create in the same view by using the Razor @helper tag. These helpers can be reused only on the same view.
 
@@ -461,7 +464,7 @@ else
 {html = System.Web.Mvc.Html.InputExtensions.TextBoxFor(htmlHelper, expression);}
 return html;}}
 
-Question: ###What are Url Helpers?
+Question: ### What are Url Helpers?
 Url helpers allows you to render HTML links and raw URLs. The output of these helpers is dependent on the routing configuration of your ASP.NET MVC application.
 
 HTML Element
@@ -480,7 +483,7 @@ Raw URL for Action
 Url.Action("About", "Home")
 Output: /Home/About
 
-Question : ###Explain attribute based routing in MVC?
+Question : ### Explain attribute based routing in MVC?
 In ASP.NET MVC 5.0 we have a new attribute route, By using the "Route" attribute we can define the URL structure. For example in the below code we have decorated the "GotoAbout" action with the route attribute. The route attribute says that the "GotoAbout" can be invoked using the URL structure "Users/about".
 Code:
 	public class HomeController: Controller
@@ -488,7 +491,7 @@ Code:
 	publicActionResultGotoAbout()
 	{	return View(); 	} 	}
 
-Question : ###What is TempData in MVC?
+Question : ### What is TempData in MVC?
 TempData is a dictionary object to store data temporarily. It is a TempDataDictionary class type and instance property of the Controller base class. TempData is able to keep data for the duration of a HTP request, in other words it can keep live data between two consecutive HTTP requests. It will help us to pass the state between action methods. TempData only works with the current and subsequent request. TempData uses a session variable to store the data. TempData Requires type casting when used to retrieve data.
 TempDataDictionary is inherited from the IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>> and IEnumerable interfaces.
 Example:
@@ -504,7 +507,7 @@ Example:
 	{	List < string > modelData = TempData["EmpName"] as List < string > ;
 	TempData.Keep();  return View(modelData);	}
 
-Question : ###What is Razor in MVC? Or What is Razor View Engine?
+Question : ### What is Razor in MVC? Or What is Razor View Engine?
 Razor Engine is an advanced view engine that was introduced with MVC3. This is not a new language but it is a new markup syntax. Razor has new and advance syntax that are compact, expressive and reduces typing. Razor syntax are easy to learn and much clean than Web Form syntax. Razor uses @ symbol to write markup as:
 @Html.ActionLink("SignUp", "SignUp")
 Question : Why is Razor?
@@ -518,7 +521,7 @@ Unit Testable: The new view engine implementation will support the ability to un
 
 
 
-Question : ###Differences between Razor and ASPX View Engine in MVC?
+Question : ### Differences between Razor and ASPX View Engine in MVC?
 Razor View Engine VS ASPX View Engine:
 Razor View Engine
 ASPX View Engine (Web form view engine)
@@ -547,8 +550,10 @@ There are only three transition characters with the Razor View Engine.
 
 The Razor View Engine is bit slower than the ASPX View Engine.
 Razor provides a new view engine with streamlined code for focused templating. Razor's syntax is very compact and improves readability of the markup and code. By default MVC supports ASPX (web forms) and Razor View Engine. MVC also supports third-party view engines like Spark, Nhaml, NDjango, SharpDOM and so on. ASP.NET MVC is open source.
-Question : What are the Main Razor Syntax Rules?
- There are following types of Razor syntax-
+
+Question : ### What are the Main Razor Syntax Rules?
+
+There are following types of Razor syntax-
 •	Razor code blocks are enclosed in @{ ... }
 •	Inline expressions (variables and functions) start with @
 •	Code statements end with semicolon
@@ -565,7 +570,7 @@ C# Example:
 	vargreetingMessage = greeting + " Here in Huston it is: " + weekDay;	}
 	< p > The greeting is: @greetingMessage < /p>
 	
-Question: ###How do you implement Forms authentication in MVC?
+Question: ### How do you implement Forms authentication in MVC?
 Answer: Authentication is giving access to the user for a specific service by verifying his/her identity using his/her credentials like username and password or email and password. It assures that the correct user is authenticated or logged in for a specific service and the right service has been provided to the specific user based on their role that is nothing but authorization.
 ASP.NET forms authentication occurs after IIS authentication is completed. You can configure forms authentication by using forms element with in web.config file of your application. The default attribute values for forms authentication are shown below:
 <system.web> <authenticationmode="Forms">
@@ -573,7 +578,7 @@ ASP.NET forms authentication occurs after IIS authentication is completed. You c
 </authentication> </system.web>
 The FormsAuthentication class creates the authentication cookie automatically when SetAuthCookie() or RedirectFromLoginPage() methods are called. The value of authentication cookie contains a string representation of the encrypted and signed FormsAuthenticationTicket object.
 
-Question: ###Explain Areas in MVC?
+Question: ### Explain Areas in MVC?
 From ASP.Net MVC 2.0 Microsoft provided a new feature in MVC applications, Areas.
 Areas are just a way to divide or “isolate” the modules of large applications in multiple or separated MVC.
 
@@ -594,7 +599,7 @@ Easy to integrate with other Areas created by another.
 Easy for unit testing.
 
 
-Question: ###Explain the need of display mode in MVC?
+Question: ### Explain the need of display mode in MVC?
 DisplayModes give you another level of flexibility on top of the default capabilities we saw in the last section. DisplayModes can also be used along with the previous feature so we will simply build off of the site we just created.
 Using display modes involves in 2 steps:
 We  should  register  Display  Mode  with  a  suffix  for  particular  browser  using “DefaultDisplayMode”e class inApplication_Start() method in the Global.asax file.
@@ -606,7 +611,9 @@ View name for particular browser should be appended with suffix mentioned in fir
 2.	Mobile browsers (with a suffix “Mobile”. e.g.:
 Index.Mobile.cshtml,Layout.Mobile.cshtml)
 If you want design different pages for different mobile device browsers (any different browsers) and render them depending on the browser requesting. To handle these requests you can register custom display modes. We can do that using DisplayModeProvider.Instance.Modes.Insert(int index, IDisplayMode item) method.
-Question: Explain the concept of MVC Scaffolding?
+
+Question: ##Explain the concept of MVC Scaffolding?
+
 ASP.NET Scaffolding is a code generation framework for ASP.NET Web applications. Visual Studio 2013 includes pre-installed code generators for MVC and Web API projects. You add scaffolding to your project when you want to quickly add code that interacts with data models. Using scaffolding can reduce the amount of time to develop standard data operations in your project.
 Scaffolding consists of page templates, entity page templates, field page templates, and filter templates. These templates are called Scaffold templates and allow you to quickly build a functional data-driven Website.
 
@@ -636,7 +643,9 @@ Delete: It creates a list of records from the model collection along with the de
 Details: It generates a view that displays the label and an input field of the each property of the Model in the MVC framework.
 Edit: It creates a View with a form that helps in editing the current Model. It also generates a form with label and field for each property of the model.
 List: It generally creates a View with the help of a HTML table that lists the Models from the Model Collection. It also generates a HTML table column for each property of the Model.
-Question: What is Route Constraints in MVC?
+
+Question:### What is Route Constraints in MVC?
+
 Routing is a great feature of MVC, it provides a REST based URL that is very easy to remember and improves page ranking in search engines.
 This article is not an introduction to Routing in MVC, but we will learn a few features of routing and by implementing them we can develop a very flexible and user-friendly application. So, let's start without wasting valuable time.
 Add constraint to URL:
@@ -648,7 +657,8 @@ Controller name, now when we browse we need to specify the string in the URL, as
 
 
 
-Question: ###What is Output Caching in MVC?
+Question: ### What is Output Caching in MVC?
+
 The main purpose of using Output Caching is to dramatically improve the performance of an ASP.NET MVC Application. It enables us to cache the content returned by any controller method so that the same content does not need to be generated each time the same controller method is invoked. Output Caching has huge advantages, such as it reduces server round trips, reduces database server round trips, reduces network traffic etc.
 Keep the following in mind:
 •	Avoid caching contents that are unique per user.
@@ -666,12 +676,15 @@ OutputCache label has a "Location" attribute and it is fully controllable. Its d
 5.	None
 6.	ServerAndClient
 With "Any", the output cache is stored on the server where the request was processed. The recommended store cache is always on the server very carefully. You will learn about some security related tips in the following "Don't use Output Cache".
-Question: What is Bundling and Minification in MVC?
+
+Question: ### What is Bundling and Minification in MVC?
+
 Bundling and minification are two new techniques introduced to improve request load time. It improves load time by reducing the number of requests to the server and reducing the size of requested assets (such as CSS and JavaScript).
 Bundling: It lets us combine multiple JavaScript (.js) files or multiple cascading style sheet (.css) files so that they can be downloaded as a unit, rather than making individual HTTP requests.
 Minification: It squeezes out whitespace and performs other types of compression to make the downloaded files as small as possible. At runtime, the process identifies the user agent, for example IE, Mozilla, etc. and then removes whatever is specific to Mozilla when the request comes from IE.
 
-Question: ###What is Validation Summary in MVC?
+Question: ### What is Validation Summary in MVC?
+
 The ValidationSummary helper method generates an unordered list (ul element) of validation messages that are in the ModelStateDictionary object.
 The ValidationSummary can be used to display all the error messages for all the fields. It can also be used to display custom error messages. The following figure shows how ValidationSummary displays the error messages.
 
@@ -702,7 +715,8 @@ So now, the following Edit view will display error messages as a summary at the 
 
 
 
-Question: ###What is Database First Approach in MVC using Entity Framework?
+Question: ### What is Database First Approach in MVC using Entity Framework?
+
 Database First Approach is an alternative to the Code First and Model First approaches to the Entity Data Model which creates model codes (classes, properties, DbContextetc) from the database in the project and that class behaves as the link between database and controller.
 There are the following approachs which is used to connect with database to application.
 •	Database First
@@ -717,14 +731,16 @@ There are the following approachs which is used to connect with database to appl
 
 Database first is nothing but only an approach to create web application where database is available first and can interact with the database. In this database, database is created first and after that we manage the code. The Entity Framework is able to generate a business model based on the tables and columns in a relational database.
 
-Question: ###What are the Folders in MVC application solutions?
+Question: ### What are the Folders in MVC application solutions?
+
 When you create a project a folder structure gets created by default under the name of your project which can be seen in solution explorer. Below i will give you a brief explanation of what these folders are for.
 Model: This folder contains classes that are used to provide data. These classes can contain data that is retrived from the database or data inserted in the form by the user to update the database.
 Controllers: These are the classes which will perform the action invoked by the user. These classes contain methods known as "Actions" which responds to the user action accordingly.
 Views: These are simple pages which use the model class data to populate the HTML controls and render it to the client browser.
 App_Start: Contains Classes such as FilterConfig, RoutesConfig, WebApiConfig. As of now we need to understand the RouteConfig class. This class contains the default format of the url that should be supplied in the browser to navigate to a specified page.
 
-Question: ###What are the methods of handling an Error in MVC?
+Question: ### What are the methods of handling an Error in MVC?
+
 Exception handling may be required in any application, whether it is a web application or a Windows Forms application. ASP.Net MVC has an attribute called "HandleError" that provides built-in exception filters. The HandleError attribute in ASP.NET MVC can be applied over the action method as well as Controller or at the global level. The HandleError attribute is the default implementation of IExceptionFilter. When we create a MVC application, the HandleError attribute is added within the Global.asax.cs file and registered in the Application_Start event.
 	public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 	{ 	filters.Add(new HandleErrorAttribute()); 	}
@@ -753,7 +769,8 @@ HandleError Attribute at Action Method Level,
 	int u = Convert.ToInt32(""); // Error line
 	return View();	}
 	
-Question: ###What is Scaffolding in MVC?
+Question: ### What is Scaffolding in MVC?
+
 Scaffolding is a code generation framework for ASP.NET Web applications. Visual Studio 2013 includes pre-installed code generators for MVC and Web API projects. You add scaffolding to your project when you want to quickly add code that interacts with data models. Using scaffolding can reduce the amount of time to develop standard data operations in your project.
 Prerequisites: To use ASP.NET Scaffolding, you must have:
 •	Microsoft Visual Studio 2013
@@ -766,7 +783,8 @@ Pages that are fully functional and include display, insert, edit, delete, sorti
 Built-in data validation that is based on the database schema.
 Filters that are created for each foreign key or Boolean fields.
 
-Question: ###What is ViewStart?
+Question: ### What is ViewStart?
+
 Razor View Engine introduced a new layout named _ViewStart which is applied on all view automatically. Razor View Engine firstly executes the _ViewStart and then start rendering the other view and merges them.
 Example of Viewstart:
 	@ {	Layout = "~/Views/Shared/_v1.cshtml";	} 
@@ -774,13 +792,15 @@ Example of Viewstart:
 	< html > 	< head > 	< meta name = "viewport" 	content = "width=device-width" / >
 	< title > ViewStart < /title> < /head> < body > …..	< /body> < /html>
 	
-Question: ###What is JsonResultType in MVC?
+Question: ### What is JsonResultType in MVC?
+
 Action methods on controllers return JsonResult (JavaScript Object Notation result) that can be used in an AJAX application. This class is inherited from the "ActionResult" abstract class. Here Json is provided one argument which must be serializable. The JSON result object that serializes the specified object to JSON format.
 Example:
 	public JsonResult JsonResultTest()
 	{ 	Return Json("Hello My Friend!"); 	}
 	
-Question: ###What is TempData?
+Question: ### What is TempData?
+
 Tempdata-
 TempData is a dictionary object derived from the TempDataDictionary class.
 TempData is used to pass data from the current request to a subsequent request, in other words in the case of redirection.
@@ -790,7 +810,8 @@ It requires typecasting for complex data type as I’ve used in my example:
 You can retain its value using the Keep method for subsequent requests.
 
 
-Question: ###How to use ViewBag?
+Question: ### How to use ViewBag?
+
 ViewBag is dynamic property that takes advantage of new dynamic features in C# 4.0. It's also used to pass data from a controller to a view. In short, The ViewBag property is simply a wrapper around the ViewData that exposes the ViewData dictionary as a dynamic object. Now create an action method "StudentSummary" in the "DisplayDataController" controller that stores a Student class object in ViewBag.
 	public ActionResult StudentSummary()
 	{	var student = new Student() 	{
@@ -804,7 +825,8 @@ Thereafter create a view StudentSummary ("StudentSummary.cshtml") that shows stu
 Here we used one more thing, "ViewBag.Title", that shows the title of the page.
 
 
-Question: ###What is Data Annotation Validator Attributes in MVC?
+Question: ### What is Data Annotation Validator Attributes in MVC?
+
 DataAnnotation plays a vital role in added validation to properties while designing the model itself. This validation can be added for both the client side and the server side.You understand that decorating the properties in a model with an Attribute can make that property eligible for Validation.
 Some of the DataAnnotation used for validation are given below:
 
@@ -839,7 +861,8 @@ MinLength
 It is used to check for minimum length.
 [MinLength(5, ErrorMessage = "Customer Code is too small")]
  
-Question: ###How can we done Custom Error Page in MVC?
+Question: ### How can we done Custom Error Page in MVC?
+
 The HandleErrorAttribute allows you to use a custom page for this error. First you need to update your web.config file to allow your application to handle custom errors.
 	<system.web> 	<customErrors mode="On">	</system.web>
 Then, your action method needs to be marked with the atttribute.
@@ -859,7 +882,8 @@ Next, we simply need to update the HandleErrorAttribute on the action method.
 	publicActionResultThrowException()
 	{	throw new ApplicationException(); 	} 	}
 
-Question: ###Server Side Validation in MVC?
+Question: ### Server Side Validation in MVC?
+
 The ASP.NET MVC Framework validates any data passed to the controller action that is executing, it populates a ModelState object with any validation failures that it finds and passes that object to the controller. Then the controller actions can query the ModelState to discover whether the request is valid and react accordingly.
 I will use two approaches in this article to validate a model data. One is to manually add an error to the ModelState object and another uses the Data Annotation API to validate the model data.
 Approach 1: Manually Add Error to ModelState object-
@@ -909,7 +933,8 @@ Thereafter I create a view (Index.cshtml) for the user input under the User fold
 	{	< span class = "field-validation-error" > @ViewData.ModelState["Email"].Errors[0].ErrorMessage < /span>	}
 	< /div> < p >	< input type = "submit" value = "Create" / >	< /p> < /fieldset>	}
  
-Question: ###What is the use of remote validation in MVC?
+Question: ### What is the use of remote validation in MVC?
+
 Remote validation is the process where we validate specific data posting data to a server without posting the entire form data to the server. Let's see an actual scenario, in one of my projects I had a requirement to validate an email address, whetehr it already exists in the database. Remote validation was useful for that; without posting all the data we can validate only the email address supplied by the user.
 Practical Explanation
 Let's create a MVC project and name it accordingly, for me its “TestingRemoteValidation”. Once the project is created let's create a model named UserModel that will look like:
@@ -927,7 +952,8 @@ public ActionResult CheckExistingEmail(string UserEmailAddress)
 	return Json(!ifEmailExist, JsonRequestBehavior.AllowGet);
 	} catch (Exception ex){return Json(false, JsonRequestBehavior.AllowGet);	} }
  
-Question: ###What are the Exception filters in MVC?
+Question: ### What are the Exception filters in MVC?
+
 Exception is part and parcel of an application. They are a boon and a ban for an application too. Isn't it? This would be controversial, for developers it helps them track minor and major defects in an application and sometimes they are frustrating when it lets users land on the Yellow screen of death each time. This would make the users mundane to the application. Thus to avoid this, developers handle the exceptions. But still sometimes there are a few unhandled exceptions.
 Now what is to be done for them? MVC provides us with built-in "Exception Filters" about which we will explain here.
 Get Started:
@@ -963,7 +989,8 @@ The exception being thrown from the action is detailed by the Exception property
 	{	filterContext.Result = new RedirectResult("customErrorPage.html");
 	filterContext.ExceptionHandled = true;	}	}	}
 
-Question: ###What is MVC HTML- Helpers and it’s Methods?
+Question: ### What is MVC HTML- Helpers and it’s Methods?
+
 Helper methods are used to render HTML in the view. Helper methods generate HTML output that is part of the view. They provide an advantage over using the HTML elements since they can be reused across the views and also requires less coding. There are several builtin helper methods that are used to generate the HTML for some commonly used HTML elements, like form, checkbox, dropdownlist etc. Also we can create our own helper methods to generate custom HTML. First we will see how to use the builtin helper methods and then we will see how to create custom helper methods.
 Standard HtmlHelper methods: Some of the standard helper methods are:
 •	ActionLink: Renders an anchor.
@@ -977,8 +1004,9 @@ Standard HtmlHelper methods: Some of the standard helper methods are:
 •	TextArea: Renders text area.
 •	TextBox: Renders text box.
 
-Question: ###Define Controller in MVC?
- The controller provides model data to the view, and interprets user actions such as button clicks. The controller depends on the view and the model. In some cases, the controller and the view are the same object.
+Question: ### Define Controller in MVC?
+
+The controller provides model data to the view, and interprets user actions such as button clicks. The controller depends on the view and the model. In some cases, the controller and the view are the same object.
 
 The Controllers Folder: The Controllers Folder contains the controller classes responsible for handling user input and responses. MVC requires the name of all controllers to end with "Controller".
 In our example, Visual Web Developer has created the following files: HomeController.cs (for the Home and about pages) and AccountController.cs (For the Log On pages):
@@ -997,11 +1025,14 @@ In our example, Visual Web Developer has created the following files: HomeContro
 
 
 
-Question: ###Explain Model in MVC?
+Question: ### Explain Model in MVC?
+
 The model represents the data, and does nothing else. The model does NOT depend on the controller or the view. The MVC Model contains all application logic (business logic, validation logic, and data access logic), except pure view and controller logic. With MVC, models both hold and manipulate application data.
 The Models Folder: The Models Folder contains the classes that represent the application model.
 Visual Web Developer automatically creates an AccountModels.cs file that contains the models for application security.
-Question: Explain View in MVC?
+
+Question: ### Explain View in MVC?
+
 A view is responsible for displaying all of, or a portion of, data for users. In simple terms, whatever we see on the output screen is a view.
 The Views Folder: The Views folder stores the files (HTML files) related to the display of the application (the user interfaces). These files may have the extensions html, asp, aspx, cshtml, and vbhtml, depending on the language content.
 The Views folder contains one folder for each controller. Visual Web Developer has created an Account folder, a Home folder, and a Shared folder (inside the Views folder). The Account folder contains pages for registering and logging in to user accounts. The Home folder is used for storing application pages like the home page and the about page. The Shared folder is used to store views shared between controllers (master pages and layout pages).
@@ -1022,7 +1053,8 @@ The Views folder contains one folder for each controller. Visual Web Developer h
 
 
 
-Question: ###What is Attribute Routing in MVC?
+Question: ### What is Attribute Routing in MVC?
+
 A route attribute is defined on top of an action method. The following is the example of a Route Attribute in which routing is defined where the action method is defined.
 In the following example, I am defining the route attribute on top of the action method:
 	public class HomeController: Controller
@@ -1048,18 +1080,23 @@ We can also define an optional parameter in the URL pattern by defining a questi
 	public ActionResult OtherTest(string customerName)
 	{	ViewBag.Message = "Welcome to ASP.NET MVC!";
 	return View();	}	}
-Question: ###Explain RenderSection in MVC?
+Question: ### Explain RenderSection in MVC?
+
 RenderSection() is a method of the WebPageBase class. Scott wrote at one point, The first parameter to the "RenderSection()" helper method specifies the name of the section we want to render at that location in the layout template. The second parameter is optional, and allows us to define whether the section we are rendering is required or not. If a section is "required", then Razor will throw an error at runtime if that section is not implemented within a view template that is based on the layout file (that can make it easier to track down content errors). It returns the HTML content to render.
 <div id="body">	@RenderSection("featured", required: false)
 	<section class="content-wrapper main-content clear-fix">
 	@RenderBody() 	</section>	</div>
-Question: ###What is GET and POST Actions Types?
+
+Question: ### What is GET and POST Actions Types?
+
 GET - GET is used to request data from a specified resource. With all the GET request we pass the URL which is compulsory, however it can take the following overloads.
 .get(url [, data ] [, success(data, textStatus, jqXHR) ] [, dataType ] ).done/.fail
+
 POST - POST is used to submit data to be processed to a specified resource. With all the POST requests we pass the URL which is compulsory and the data, however it can take the following overloads.
 .post(url [, data ] [, success(data, textStatus, jqXHR) ] [, dataType ] )
  
-Question: ###What's new in MVC 6?
+Question: ### What's new in MVC 6?
+
 In MVC 6 Microsoft removed the dependency of System.Web.Dll from MVC6 because it's so expensive that typically it consumes 30k of memory per request and response, whereas now MVC 6 only requires 2k of memory per request and the response is a very small memory consumtion.
 The advantage of using the cloud-optimized framework is that we can include a copy of the mono CLR with your website. For the sake of one website we do not need to upgrade the .NET version on the entire machine. A different version of the CLR for a different website running side by side.
 MVC 6 is a part of ASP.NET 5 that has been designed for cloud-optimized applications. The runtime automatically picks the correct version of the library when our MVC application is deployed to the cloud.
@@ -1076,7 +1113,8 @@ Using the IServiceProvider interface we can easily add our own dependency inject
 Supports OWIN:
 We have complete control over the composable pipeline in MVC 6 applications. MVC 6 supports the OWIN abstraction.
 
-Question: ###What is Domain Driven Design and Development?
+Question: ### What is Domain Driven Design and Development?
+
 Domain-Driven Design (DDD) is a collection of principles and patterns that help developers to take design decisions to develop elegant systems for different domains. It is not a technology or methodology.
 The main components of DDD are: Entity, Value Object, Aggregate, Service and Repository.
 Entity- An object that has an identity- it is unique within the system, like Customer, Employee etc.
@@ -1087,7 +1125,8 @@ Service- A service is a way of dealing with actions, operations and activities w
 Repository- A repository is responsible to store and to retrieve your data. It is not a concern how and where data will be persist. So, it can be SQL server, oracle, xml, text file or anything else. Repository is not a Data Access Layer but it refers to a location for storage, often for safety or preservation.
 For more info refer this link http://msdn.microsoft.com/en-us/magazine/dd419654.aspx
 
-Question: ###What is MVP pattern?
+Question: ### What is MVP pattern?
+
 This pattern is similar to MVC pattern in which controller has been replaced by the presenter. This design pattern splits an application into three main aspects: Model, View and Presenter.
 Model - The Model represents a set of classes that describes the business logic and data. It also defines business rules for data means how the data can be changed and manipulated.
 View - The View represents the UI components like CSS, jQuery, html etc. It is only responsible for displaying the data that is received from the presenter as the result. This also transforms the model(s) into UI.
@@ -1111,7 +1150,8 @@ There is one-to-one relationship between View and Presenter means one View is ma
 View has a reference to Presenter but View has not reference to Model.
 Provides two way communication between View and Presenter.
 
-Question: ###What is MVVM pattern?
+Question: ### What is MVVM pattern?
+
 MVVM stands for Model-View-View Model. This pattern supports two-way data binding between view and View model. This enables automatic propagation of changes, within the state of view model to the View. Typically, the view model uses the observer pattern to notify changes in the view model to model.
 Model - The Model represents a set of classes that describes the business logic and data. It also defines business rules for data means how the data can be changed and manipulated.
 View - The View represents the UI components like CSS, jQuery, html etc. It is only responsible for displaying the data that is received from the controller as the result. This also transforms the model(s) into UI.
@@ -1133,7 +1173,8 @@ There is many-to-one relationship between View and ViewModel means many View can
 View has a reference to ViewModel but View Model has no information about the View.
 Supports two-way data binding between View and ViewModel.
 
-Question: ###How MVC pattern works in ASP.NET MVC?
+Question: ### How MVC pattern works in ASP.NET MVC?
+
 Working of MVC pattern in ASP.NET MVC is explained as below:
 The Model in ASP.NET MVC
 The Model in ASP.NET MVC can be broken down into several different layers as given below:
@@ -1161,7 +1202,8 @@ The Controller in ASP.NET MVC
 The Controller in ASP.NET MVC, respond to HTTP requests and determine the action to take based upon the content of the incoming request. It receives input from users via the View, then process the user's data with the help of Model and passing the results back to the View.
 By default, controllers are stored in the Controllers folder an ASP.NET MVC application.
 
-Question: ###Explain brief history of ASP.NET MVC?
+Question: ### Explain brief history of ASP.NET MVC?
+
 Here is the list of released version history of ASP.NET MVC Framework with theirs features.
 ASP.NET MVC1
 Released on Mar 13, 2009
@@ -1240,7 +1282,8 @@ ViewModel contain fields that are represented in the view (for LabelFor, EditorF
 ViewModel can have specific validation rules using data annotations.
 ViewModel can have multiple entities or objects from different data models or data source.
 
-Question : ###Explain ASP.NET MVC pipeline?
+Question : ### Explain ASP.NET MVC pipeline?
+
 The detail ASP.NET MVC pipeline is given below:
 Routing - Routing is the first step in ASP.NET MVC pipeline. Typically, it is a pattern matching system that matches the incoming request to the registered URL patterns in the Route Table.
 The UrlRoutingModule(System.Web.Routing.UrlRoutingModule) is a class which matches an incoming HTTP request to a registered route pattern in the RouteTable(System.Web.Routing.RouteTable).
@@ -1265,7 +1308,7 @@ Authorization filter allow you to perform authorization process for an authentic
 
 Action filters are executed before (OnActionExecuting) and after (OnActionExecuted) an action is executed. IActionFilter interface provides you two methods OnActionExecuting and OnActionExecuted methods which will be executed before and after an action gets executed respectively. You can also make your own custom ActionFilters filter by implementing IActionFilter. For more about filters refer this article Understanding ASP.NET MVC Filters and Attributes
 
-###When action is executed, it process the user inputs with the help of model (Business Model or Data Model) and prepare Action Result.
+### When action is executed, it process the user inputs with the help of model (Business Model or Data Model) and prepare Action Result.
 
 Result Execution - Result execution occurs in the following steps:
 Result filters are executed before (OnResultExecuting) and after (OnResultExecuted) the ActionResult is executed. IResultFilter interface provides you two methods OnResultExecuting and OnResultExecuted methods which will be executed before and after an ActionResult gets executed respectively. You can also make your own custom ResultFilters filter by implementing IResultFilter.
@@ -1280,7 +1323,7 @@ ViewResult type i.e. view and partial view are represented by IView (System.Web.
 
 Html Helpers are used to write input fields, create links based on the routes, AJAX-enabled forms, links and much more. Html Helpers are extension methods of the HtmlHelper class and can be further extended very easily. In more complex scenario, it might render a form with client side validation with the help of JavaScript or jQuery.
 
-Question : ###What are Routing in ASP.NET MVC?
+Question : ### What are Routing in ASP.NET MVC?
 Routing is a pattern matching system that monitor the incoming request and figure out what to do with that request. At runtime, Routing engine use the Route table for matching the incoming request's URL pattern against the URL patterns defined in the Route table. You can register one or more URL patterns to the Route table at Application_Start event.
 
 
@@ -1336,7 +1379,7 @@ No Match Found
 Note: Always put more specific route on the top order while defining the routes, since routing system check the incoming URL pattern form the top and as it get the matched route it will consider that. It will not checked further routes after matching pattern.
 
 
-Question:###What is Attribute Routing and how to define it?
+### What is Attribute Routing and how to define it?
 ASP.NET MVC5 and WEB API 2 supports a new type of routing, called attribute routing. In this routing, attributes are used to define routes. Attribute routing provides you more control over the URIs by defining routes directly on actions and controllers in your ASP.NET MVC application and WEB API.
 Controller level routing – You can define routes at controller level which apply to all actions within the controller unless a specific route is added to an action.
 
@@ -1364,7 +1407,7 @@ When you combine attribute routing with convention-based routing, actions which 
 
 When you have only attribute routing, actions which do not have Route attribute for defining attribute-based routing will not be the part of attribute routing. In this way they can’t be access from outside as a URI.
 
-Question : ###When to use Attribute Routing?
+Question : ### When to use Attribute Routing?
 The convention-based routing is complex to support certain URI patterns that are common in RESTful APIs. But by using attribute routing you can define these URI patterns very easily.
 For example, resources often contain child resources like Clients have orders, movies have actors, books have authors and so on. It’s natural to create URIs that reflects these relations like as: /clients/1/orders
 This type of URI is difficult to create using convention-based routing. Although it can be done, the results don’t scale well if you have many controllers or resource types.
@@ -1373,7 +1416,7 @@ With attribute routing, it’s pretty much easy to define a route for this URI. 
 public IEnumerable<Order> GetOrdersByClient(int clientId)
 {//TO DO}
 	
-Question : ###How to enable Attribute Routing in ASP.NET MVC?
+Question : ### How to enable Attribute Routing in ASP.NET MVC?
 Enabling attribute routing in your ASP.NET MVC5 application is simple, just add a call to routes.MapMvcAttributeRoutes() method with in RegisterRoutes() method of RouteConfig.cs file.
 public class RouteConfig
 {public static void RegisterRoutes(RouteCollection routes)
@@ -1402,11 +1445,11 @@ public ActionResult GetProducts()
 public ActionResult Categories()
 { return View(); } }
 
-Question : ###What is difference between Routing and URL Rewriting?
+Question : ### What is difference between Routing and URL Rewriting?
 Many developers compare routing to URL rewriting since both look similar and can be used to make SEO friendly URLs. But both the approaches are very much different. The main difference between routing and url rewriting is given below:
 URL rewriting is focused on mapping one URL (new url) to another URL (old url) while routing is focused on mapping a URL to a resource. URL rewriting rewrites your old url to new one while routing never rewrite your old url to new one but it map to the original route.
 
-Question : ###What is Route Constraints in ASP.NET MVC?
+Question : ### What is Route Constraints in ASP.NET MVC?
 Route constraints is way to put some validation around the defined route.
 Creating Route Constraints
 Suppose we have defined the following route in our application and you want to restrict the incoming request url with numeric id only.Now let's see how to do it with the help of regular expression.
@@ -1431,7 +1474,7 @@ Now for this route, routing engine will consider only those URLs which have only
 Question : How route table is created in ASP.NET MVC?
 When an MVC application first starts, the Application_Start() method in global.asax is called. This method calls the RegisterRoutes() method. The RegisterRoutes() method creates the route table for MVC application.
 
-Question : ###What are important namespaces in ASP.NET MVC?
+Question : ### What are important namespaces in ASP.NET MVC?
 There are some important namespaces as given below:
 System.Web.Mvc - This namespace contains classes and interfaces that support the MVC pattern for ASP.NET Web applications. This namespace includes classes that represent controllers, controller factories, action results, views, partial views, and model binders.
 
@@ -1439,10 +1482,10 @@ System.Web.Mvc.Ajax - This namespace contains classes that supports Ajax scripti
 
 System.Web.Mvc.Html – This namespace contains classes that help render HTML controls in an MVC application. This namespace includes classes that support forms, input controls, links, partial views, and validation.
 
-Question : ###What is difference View Engine?
+Question : ### What is difference View Engine?
 A View Engine is a MVC subsystem which has its own markup syntax. It is responsible for converting server-side template into HTML markup and rendering it to the browser. Initially, ASP.NET MVC ships with one view engine, web forms (ASPX) and from ASP.NET MVC3 a new view engine, Razor is introduced. With ASP.NET MVC, you can also use other view engines like Spark, NHaml etc.
 
-Question : ######How View Engine works?
+Question : ### How View Engine works?
 Each view engine has following three main components:
 ViewEngine class - This class implements the IViewEngine interface and responsible for locating view templates.
 
@@ -1450,7 +1493,7 @@ View class - This class implements the IView interface and responsible for combi
 
 Template parsing engine - This parses the template and compiles the view into executable code.
 
-Question : ###How to make Custom View Engine?
+Question : ### How to make Custom View Engine?
 ASP.NET MVC is an open source and highly extensible framework. You can create your own View engine by Implementing IViewEngine interface or by inheriting VirtualPathProviderViewEngine abstract class.
 public class CustomViewEngine : VirtualPathProviderViewEngine
 {public CustomViewEngine()
@@ -1481,18 +1524,23 @@ public virtual string GetMatch(Match m, ViewDataDictionary viewdata)
 {string key = m.Result("$1"); if (viewdata.ContainsKey(key))
 {return viewdata[key].ToString();}}
 return string.Empty;}}
-Question : How to register Custom View Engine in ASP.NET MVC?
+
+Question : ### How to register Custom View Engine in ASP.NET MVC?
+
 To use your custom View Engine, you need to register it by using global.asax.cs file Application_Start() method, so that the framework will use your custom View Engine instead of the default one.
 protected void Application_Start()
 {//Register Custom View Engine 
 ViewEngines.Engines.Add(new CustomViewEngine());
 //other code is removed for clarity}
-Question : Can you remove default View Engine in ASP.NET MVC?
+
+Question : ### Can you remove default View Engine in ASP.NET MVC?
+
 Yes, you can remove default view engines (Razor and WebForm) provided by ASP.NET MVC.
 protected void Application_Start()
 { //Remove All View Engine including Webform and Razor ViewEngines.Engines.Clear(); }
 
-Question : ###What  are AJAX Helpers?
+Question : ### What  are AJAX Helpers?
+
 AJAX Helpers are used to create AJAX enabled elements like as Ajax enabled forms and links which performs request asynchronously. AJAX Helpers are extension methods of AJAXHelper class which exist in  System.Web.Mvc.Ajax namespace.
 AJAX HTML Element
 Example
@@ -1502,7 +1550,8 @@ Output: <a data-ajax="true" data-ajax-method="GET" data-ajax-mode="replace"
 data-ajax-update="#Products-container" href="/Home/GetProducts">Load Products</a>
 
 
-Question: ###What is unobtrusive AJAX?
+Question: ### What is unobtrusive AJAX?
+
 ASP.NET MVC supports unobtrusive Ajax which is based on jQuery. The unobtrusive Ajax means that you use helper methods to define your Ajax features, rather than adding blocks of code throughout your views.
 Question: What are various configuration options for AJAX Helpers?
 The AjaxOptions class defines properties that allow you to specify callbacks for different stages in the AJAX request life cycle. There are following properties provided by AjaxOptions class for AJAX helpers:
@@ -1532,7 +1581,8 @@ Specify the way of populating the target container. The possible values are Inse
 UpdateTargetId
 Specify the target container’s Id that will be populated with the HTML returned bythe action method.
 
-Question: ###What is Cross Domain AJAX?
+Question: ### What is Cross Domain AJAX?
+
 By default, web browsers allows AJAX calls only to your web application’s site of origin i.e. site hosted server. This restriction help us to prevent various security issues like cross site scripting (XSS) attacks. But, sometimes you need to interact with externally hosted API(s) like Twitter or Google. Hence to interact with these external API(s) or services your web application must support JSONP requests or Cross-Origin Resource Sharing (CORS). By default, ASP.NET MVC does not support JSONP or Cross-Origin Resource Sharing. For this you need to do a little bit of coding and configuration.
 Question: What are Layouts in ASP.NET MVC?
 Layouts are used to maintain a consistent look and feel across multiple views within ASP.NET MVC application. As compared to Web Forms, layouts serve the same purpose as master pages, but offer a simple syntax and greater flexibility. A basic structure of layout is given below:
@@ -1544,7 +1594,7 @@ Layouts are used to maintain a consistent look and feel across multiple views wi
 You can use a layout to define a common template for your site. A layout can be declared at the top of view as:
 @{ Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 Question:What are Sections in ASP.NET MVC?
-A section allow you to specify a region of content within a layout. It expects one parameter which is the name of the section. If you don’t provide that, an exception will be thrown. A section in a layout page can be defined by using the following code.
+A section allow you to specify a region of content within a layout. It expects one parameter which is the name of the section. If you   don’t provide that, an exception will be thrown. A section in a layout page can be defined by using the following code.
 @section header{ <h1>Header Content</h1> }
 You can render above defined section header on the content page as given below:
  @RenderSection("header")
@@ -1561,20 +1611,24 @@ RenderPage method also exists in the Layout page to render other page exists in 
  @RenderPage("~/Views/Shared/_Header.cshtml")
  
  
-Question: ###What are Styles.Render and Scripts.Render?
+Question: ### What are Styles.Render and Scripts.Render?
+
 Style.Render is used to render a bundle of CSS files defined within BundleConfig.cs files. Styles.Render create style tag(s) for the CSS bundle. Like Style.Render, Scripts.Render is also used to render a bundle of Script files by rendering script tag(s) for the Script bundle.
 public class BundleConfig
 {public static void RegisterBundles(BundleCollection bundles)
 {bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include( "~/Scripts/jquery.unobtrusive*", "~/Scripts/jquery.validate*"));
 bundles.Add(new StyleBundle("~/Content/themes/base/css").Include( "~/Content/themes/base/jquery.ui.core.css", "~/Content/themes/base/jquery.ui.resizable.css", "~/Content/themes/base/jquery.ui.selectable.css", "~/Content/themes/base/jquery.ui.button.css", "~/Content/themes/base/jquery.ui.dialog.css", "~/Content/themes/base/jquery.ui.theme.css"));}
 Styles.Render and Scripts.Render generate multiple style and script tags for each item in the CSS bundle and Script bundle when optimizations are disabled. When optimizations are enabled, Styles.Render and Scripts.Render generate a single style and script tag to a version-stamped URL which represents the entire bundle for CSS and Scripts.
-Question: How to enable and disable optimizations in ASP.NET MVC?
+
+Question:### How to enable and disable optimizations in ASP.NET MVC?
+
 You can enable and disable optimizations by setting EnableOptimizations property of BundleTable class to true or false with in Global.asax.cs file as shown below.
 protected void Application_Start()
 {//other code has been removed for clarity //disable optimization
 System.Web.Optimization.BundleTable.EnableOptimizations = false;}
 
 Question: ###What is ViewStart?
+
 _ViewStart.cshml page is used to serve common layout page(s) for a group of views. The code within this file is executed before the code in any view placed in the same directory. This file is also recursively applied to any view within a subdirectory.
 By default ASP.NET MVC project has a _ViewStart.cshtml file in the Views directory and it specifies a default layout for your ASP.NET MVC application as shown below:
 @{Layout = "~/Views/Shared/Layout.cshtml";}
@@ -1582,7 +1636,8 @@ Since this code runs before any view, hence a view can override the Layout prope
 Question: When to use _ViewStart?
 When a set of views shares common settings, the _ViewStart.cshtml file is a great place to put these common view settings. If any view needs to override any of the common settings then that view can set new values to common settings.
 
-Question: ###What are different ways of rendering layout in ASP.NET MVC?
+Question: ### What are different ways of rendering layout in ASP.NET MVC?
+
 There are following four different ways of rendering layout in ASP.NET MVC:
 Using _ViewStart file in the root directory of the Views folder: The _ViewStart file with in Views folder is used to server the default Layout page for your ASP.NET MVC application. You can also change the default rendering of layouts with in _ViewStart file based on controller as shown below:
 @{var controller = HttpContext.Current.Request.RequestContext.RouteData.Values["Controller"].ToSt ring();
@@ -1612,7 +1667,8 @@ public ActionResult Index()
 { RegisterModel model = new RegisterModel(); //TO DO:
 return View("Index", "_AdminLayout", model); }
 
-Question:###What is App_Start folder in ASP.NET MVC?
+Question:### What is App_Start folder in ASP.NET MVC?
+
 App_Start folder has been introduced in MVC4. It contains various configurations files like as BundleConfig.cs, FilterConfig.cs, RouteConfig.cs, WebApiConfig.cs for your application. All these settings are registered within Application_Start method of Global.asax.cs file.
 BundleConfig.cs - This is used to create and register bundles for CSS and JS files. By default, various bundles are added in this files including jQuery, jQueryUI, jQuery validation, Modernizr, and Site CSS.
 
@@ -1622,7 +1678,8 @@ RouteConfig.cs - This is used to register various route patterns for your ASP.NE
 
 WebApiConfig.cs - This is used to register various WEB API routes like as ASP.NET MVC, as well as set any additional WEB API configuration settings.
 
-Question: ###What are different ways of returning/rendering a view in ASP.NET MVC?
+Question: ### What are different ways of returning/rendering a view in ASP.NET MVC?
+
 There are four different ways for returning/rendering a view in ASP.NET MVC as given below:
 Return View() - This tells MVC to generate HTML to be displayed for the specified view and sends it to the browser. This acts like as Server.Transfer() in ASP.NET WebForm.
 Return RedirectToAction() - This tells MVC to redirect to specified action instead of rendering HTML. In this case, browser receives the redirect notification and make a new request for the specified action. This acts like as Response.Redirect() in ASP.NET WebForm.
@@ -1638,7 +1695,8 @@ Return Redirect also makes a new requests and URL in the browser's address bar i
 Between RedirectToAction and Redirect, best practice is to use RedirectToAction for anything dealing with your application actions/controllers. If you use Redirect and provide the URL, you'll need to modify those URLs manually when you change the route table.
 RedirectToRoute redirects to a specific route defined in the Route table.
 
-Question: ###How to persist data in TempData?
+Question: ### How to persist data in TempData?
+
 The life of TempData is very short and lies only till the target view is fully loaded. But you can persist data in TempData by calling Keep() method after request completion
 void Keep() - Calling this method with in the current action ensures that all the items in TempData are not removed at the end of the current request.
 
@@ -1654,7 +1712,8 @@ public ActionResult Index()
 Employee emp = TempData["emp"] as Employee; //need type casting //persist only data for emp key and Message key will be destroy TempData.Keep("emp");
 return View();}
 
-Question:###How to control Session behavior in ASP.NET MVC?
+Question:### How to control Session behavior in ASP.NET MVC?
+
 By default, ASP.NET MVC support session state. Session is used to store data values across requests. Whether you store some data values with in the session or not ASP.NET MVC must manage the session state for all the controllers in your application that is time consuming. Since, session is stored on server side and consumes server memory, hence it also affect your application performance.
 If some of the controllers of your ASP.NET MVC application are not using session state features, you can disable session for those controller and can gain slight performance improvement of your application. You can simplify session state for your application by using available options for session state. In ASP.NET MVC4, SessionState attribute provides you more control over the behavior of session-state by specifying the value of SessionStateBehavior enumeration as shown below:
 Value
@@ -1670,7 +1729,8 @@ Full read-write session state behavior is enabled.
 
 
 
-Question : ###How TempData is related to Session in ASP.NET MVC?
+Question : ### How TempData is related to Session in ASP.NET MVC?
+
 In ASP.NET MVC, TempData use session state for storing the data values across requests. Hence, when you will disabled the session state for the controller, it will throw the exception as shown below:
 
 
@@ -1678,7 +1738,8 @@ In ASP.NET MVC, TempData use session state for storing the data values across re
 
 
 
-Question : ###What is ActionResult and how is it different from others?
+Question : ### What is ActionResult and how is it different from others?
+
 The ActionResult class is the base class for all action results. An action result can be of type ViewResult, JsonResult, RedirectResult and so on. Hence, when your action method returns multiple results based on different conditions, ActionResult is the best choice. Since it can return any type of result.
 public ActionResult Index(int id)
 {if (id == 1)
@@ -1692,21 +1753,21 @@ NonActionAttribute attribute.
 public void DoSomething()
 {// Method logic }
 
-Question : ###Can you change action method name?
+Question : ### Can you change action method name?
 You can also change action method name by using ActionName attribute. Now action method will be called by the name defined by the ActionName attribute.
 Now, DoSomething action will be identified and called by the name DoAction.
 [ActionName("D###oAction")]
 public ActionResult DoSomething()
 { //TODO: return View(); }
 
-Question: ###How to restrict an action method to be invoked only by HTTP GET, POST, PUT or DELETE?
+Question: ### How to restrict an action method to be invoked only by HTTP GET, POST, PUT or DELETE?
 By default, each and every action method can be invoked by any HTTP request (i.e. GET, PUT, POST, and DELETE). But you can restrict an action to be invoked only by a specific HTTP request by applying HttpGet or HttpPost or HttpPut or HttpDelete attribute.
 If you want to restrict an action method for HTTP Get request only then decorate it with HttpGet action method selector attribute as given below:
 [HttpGet]
 public ActionResult Index()
 { //TODO: return View(); }
 
-Question : ###How to determine an action method is invoked by HTTP GET or POST ?
+Question : ### How to determine an action method is invoked by HTTP GET or POST ?
 By using HttpMethod property of HttpRequestBase class, you can find out whether an action is invoked by HTTP GET or POST.
 public ActionResult Index(int? id)
 { if (Request.HttpMethod == "GET")
@@ -1716,14 +1777,14 @@ else if (Request.HttpMethod == "POST")
 else { //TODO: }
 return View(); }
 
-Question : ###How to determine an AJAX request ?
+Question : ### How to determine an AJAX request ?
 You can determine an AJAX request by using Request.IsAjaxRequest() method. It will return true, if the request is an AJAX request else returns false.
 public ActionResult DoSomething()
 {if (Request.IsAjaxRequest())
 {//TODO:  }
 return View(); }
 
-Question : ###What is Data Annotations in ASP.NET MVC?
+Question : ### What is Data Annotations in ASP.NET MVC?
 Data validation is a key aspect for developing web application. In Asp.net MVC, we can easily apply validation to web application by using Data Annotation attribute classes to model class. Data Annotation attribute classes are present in System.ComponentModel.DataAnnotations namespace and are available to Asp.net projects like Asp.net web application & website, Asp.net MVC, Web forms and also to Entity framework ORM models.
 Data Annotations help us to define the rules to the model classes or properties for data validation and displaying suitable messages to end users.
 Data Annotation Validator Attributes
@@ -1747,7 +1808,7 @@ Bind - specify fields to include or exclude when adding parameter or form values
 
 ScaffoldColumn - specify fields for hiding from editor forms.
 
-Question : ###How to apply Server side validation in ASP.NET MVC ?
+Question : ### How to apply Server side validation in ASP.NET MVC ?
 Server side validations are very important before playing with sensitive information of a user. Server-side validation must be done whether we validate the received data on the client side. User could disable script in his browser or do something else to bypass client-side validation. In this case server-side validation must require to protect our data from dirty input.
 In ASP.NET MVC, there are two ways to validate a model on server side:
 Explicit Model Validation – This is the traditional way to validate the model data by using IF..Else..IF statement. In this way, you need to check your model property values one by one for your desired result. If model property values are unexpected, inject error messages within ModelState.
@@ -1794,7 +1855,7 @@ We can also enable or disable client-side validation for a specific view. For th
 @using MvcApp.Models @{ViewBag.Title = "About";
 HtmlHelper.ClientValidationEnabled = false;}
 
-Question : ###What is  a CDN and advantage of CDN?
+Question : ### What is  a CDN and advantage of CDN?
 CDN stands for content delivery network or content distribution network (CDN) which is a large distributed system of servers deployed in multiple data centers across the Internet. The goal of a CDN is to serve the content (like jQuery library and other open source libraries) to end-users with high availability and high performance.
 There are three popular CDN – Google, Microsoft and jQuery.
 // Google CDN <scripttype="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.9
@@ -1806,7 +1867,7 @@ Advantages
 It saves bandwidth since jQuery and other open libraries/framework will load faster from these CDN.
 The most important benefit is it will be cached means if a user has visited any site which is using jQuery framework from any of these CDN and your web application is also using the same CDN for serving the jQuery then for your application, it will not request the jQuery from CDN.
 
-Question : ###What is Jquery.validate.unobtrusive.js?
+Question : ### What is Jquery.validate.unobtrusive.js?
 Or
 ###What is jQuery Validation Unobtrusive plugin?
 Microsoft introduced jquery.validate.unobtrusive.js plugin with ASP.NET MVC3 to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes.
